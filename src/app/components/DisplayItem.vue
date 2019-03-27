@@ -21,7 +21,7 @@
       </thead>
 
       <tbody>
-        <tr v-for="item in items">
+        <tr v-for="item in items" :key="item._id">
           <td>{{ item._id }}</td>
           <td>{{ item.name }}</td>
           <td>{{ item.price }}</td>
